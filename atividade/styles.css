@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #2c3e50d6;
+}
 .boldonse-regular {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
@@ -10,20 +13,22 @@
 h1{ 
     font-size: 80px;
     font-family: "Boldonse", system-ui;
+    color:#c9d4d7;
+    margin-left: 18px;
 }
 h3{
     margin-left: 37px;
-    color:white;
+    color:#34495e;
 }
 a{
     text-decoration: none;
-    color:rgb(255, 255, 255);
+    color:#34495e(255, 255, 255);
 }
 
 button {
-  background-color: red;
+  background-color: #bcd3c7;
   border: none;
-  color: white;
+  color: #34495e;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -31,64 +36,123 @@ button {
   font-size: 20px;
   font-family: "Boldonse", system-ui;
   cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  box-shadow: 0 8px 16px 0 rgba(60, 71, 82, 0.732);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
 }
 
 button:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 16px 0 #4c6a87;
 }
 
 
 #cabecalho img{
     padding-top: 10px;
+    margin-right: 18px;
 }
 #menu a{
     font-family: "Boldonse", system-ui;
 }
+#conteudo h1{
+    font-family:"Oswald", sans-serif;
+    color: #34495e;
+    padding: 5px;
+    font-size: 50px;
+}
+#conteudo p{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    padding: 25px;
+    color:#34495e
+}
+
+#conteudo h3{
+    font-family: "Boldonse", system-ui;
+    color: #34495e;
+    padding: 5px;
+    font-size: 40px;
+
+}
+
 
 
 
 #cabecalho {
     height: 150px;
-    background-color: rgb(255, 166, 0);
+    background-color:#7f8c8d;
     width: 95%;
     margin: 0 auto;
     text-align: left;
     display: flex;
     justify-content: space-between;
+    border-radius: 7px;
 }
 
 #menu {
     height: 532px;
-    width: 300px;
-    background-color: greenyellow;
+    width: 310px;
+    background-color: #7f8c8d;
     float: left;
     margin-left: 37px;
     margin-top: 10px;
+    border-radius: 7px;
 }
 #conteudo{
-    height: 500px;
-    width: 800px;
-    background-color: crimson;
+    height: 532px;
+    width: 899px;
+    background-color:#7f8c8d;
     float: left;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 11px;
+    border-radius: 7px;
+}
+#conteudo_{
+    height: 532px;
+    width: 1117px;
+    background-color:#7f8c8d;
+    float: left;
+    margin-top: 10px;
+    margin-left: 11px;
+    border-radius: 7px;
+
 }
 #lado{
-    height: 500px;
-    width: 338px;
+    height: 532px;
+    width: 218px;
     float: right;
     margin-right: 37px;
     margin-top: 10px;
-    background-color: aquamarine;
+    background-color: #7f8c8d;
+    border-radius: 7px;
 }
 #rodape{
-    background-color: blueviolet;
+    background-color: #7f8c8d;
     height: 69px;
     width: 95%;
     margin-top: 550px;
     text-align: center;
     clear: both;
     margin-left: 35px;
+    border-radius: 7px;
+
+
+}
+#p{
+    text-decoration:none;
+    font-family: "Boldonse", system-ui;
+    color:#34495e
+
+}
+#o{
+    font-family: "Boldonse", system-ui;
+    font-size: 15px;
+    color:#34495e
+}
+#ef{
+    padding-left: 550px;
+    padding-bottom: 48px;
+    
+    
 
 }
