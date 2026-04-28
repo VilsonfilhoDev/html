@@ -151,8 +151,8 @@ button:hover {
     color:#34495e
 }
 #ef{
-    padding-left: 550px;
-    padding-bottom: 48px;
+    padding-left: 1000px;
+    padding-bottom: 10000000000000px;
     
     
 
@@ -179,6 +179,7 @@ button:hover {
     border-radius: 7px;
     display: flex;
 }
+
 
 #p{
     height: 180px;
