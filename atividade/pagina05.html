@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desempenho</title>
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="stylesheet" type="text/scss" href="style.scss" media="screen" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="icon" href="img/2.svg">
 </head>
 <body>
-    <div id="cabecalho">
-        <h1> Vilson Gym</h1>
-        <a href="index.html" id="ef"><img src="img/3.svg" width="150" height="150"></a>
-       <a href="pagina01.html"><img src="img/2.svg" width="136" height="136"></a>
-       
+   <div id="cabecalho">
+      <h1>Vilson Gym</h1>
+
+      <a href="pagina01.html"
+        ><img src="img/2.svg" width="136" height="136"
+      /></a>
     </div>
 
     <div id="menu">
@@ -40,15 +43,15 @@
         <br>
         <br>
         <br>
-      <a href="pagina05.html" ><button>Desempenhamento</button></a>
+      <a href="pagina05.html" ><button>Acompanhamento</button></a>
 
     </div>
     </div>
     <div id="conteudo_">
 
-      
+      <canvas id="myChart" style="width:100%;max-width:700px">
 
-
+      </canvas>
        
     </div>
    
@@ -58,6 +61,24 @@
     <center><a href="https://github.com/VilsonfilhoDev" id="p" target="_blank">Perfil</a></center>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
+
+<script>
+  const xValues = ["Vilson", "João", "Carlos", "Amanda", "Tifani"];
+  const yValues = [55, 49, 44, 24, 15];
+  const barColors = ["white", "purple","black","blue","green"];
+
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    }
+  });
+</script>
 </body>
 
 </html>
